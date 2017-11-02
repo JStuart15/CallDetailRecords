@@ -1,0 +1,40 @@
+------------------------------------------------------------------------
+Building RavonCallReports 1.0
+------------------------------------------------------------------------
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ RavonCallReports ---
+Nov 02, 2017 10:28:42 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5910e440: startup date [Thu Nov 02 10:28:42 CDT 2017]; root of context hierarchy
+Nov 02, 2017 10:28:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
++---------+-------+
+|Month    |Minutes|
++---------+-------+
+|October  |2      |
+|September|1      |
+|August   |1      |
+|July     |2      |
+|June     |1      |
+|May      |1      |
++---------+-------+
++----------+-----------------+
+|Date      |Time-to-Answer(s)|
++----------+-----------------+
+|2017-10-31|15.0             |
+|2017-10-15|27.5             |
++----------+-----------------+
++-----------------------+----------------------+----------------------+----------------------+
+|Start Time             |ANI                   |DNIS                  |Duration(s)           |
++-----------------------+----------------------+----------------------+----------------------+
+|2017-09-30 12:34:45.0  |+18662223333          |+12181112222          |60                    |
+|2017-07-30 12:34:45.0  |+18882223333          |+15071112222          |60                    |
+|2017-05-30 12:34:45.0  |+16512223333          |+16511112222          |60                    |
+|2017-10-15 13:34:34.0  |+19522223333          |+19521112222          |100                   |
++-----------------------+----------------------+----------------------+----------------------+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 1.542 s
+Finished at: 2017-11-02T10:28:43-05:00
+Final Memory: 16M/481M
+------------------------------------------------------------------------
