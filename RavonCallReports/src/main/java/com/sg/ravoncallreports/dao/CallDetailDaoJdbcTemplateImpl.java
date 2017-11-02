@@ -53,7 +53,8 @@ public class CallDetailDaoJdbcTemplateImpl implements CallDetailDao {
             + "enddate <= ifnull(?, now()) and "
             + "type = 'OUTBOUND' and "
             + "substring(dnis,3,3) "
-            + "in ('218','320','507','612','651','763','952');";
+            + "in ('218','320','507','612','651','763','952') "
+            + "order by calldate desc;";
 
     //METHODS
     @Override
